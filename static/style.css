@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f5f7ff, #e0e4ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-body {
+  padding: 20px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 25px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.header input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#taskList li {
+  background: #f1f1ff;
+  border-radius: 15px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+.task-title {
+  font-weight: 600;
+}
+
+.task-meta {
+  font-size: 13px;
+  color: #666;
+}
+
+.task-actions {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ff4d4d;
+}
+
+.btn-add {
+  background-color: #ff5757;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 20px;
+  margin-top: 20px;
+}

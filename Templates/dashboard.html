@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - To-Do App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-card">
+    <div class="header">
+      <h2>Hello Mohin 👋</h2>
+      <p>Let’s plan your day</p>
+      <input type="text" id="searchBar" placeholder="🔍 Search task..." onkeyup="searchTasks()" />
+    </div>
+
+    <div id="taskContainer">
+      <ul id="taskList"></ul>
+    </div>
+
+    <button class="btn-add" onclick="addNewTask()">+ Add New Task</button>
+  </div>
+</body>
+</html>
